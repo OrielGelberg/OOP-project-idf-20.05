@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOP_project_idf
+﻿namespace ConsoleApp27
 {
-    internal class Class2
+    abstract class StrikeUni
     {
+        public abstract void Strike();
+        public abstract int NumberOfHits();
+        public abstract int Fuel();
+        public abstract string Efficiency();
+        public abstract string NameForValidity();
     }
 }

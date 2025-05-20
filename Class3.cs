@@ -1,8 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ConsoleApp27;
 
-namespace ConsoleApp27
+namespace OOP_project_idf
 {
-    internal class F16FighterJet : StrikeUni
+    internal class Hermes460_Zik_Drone : StrikeUni
     {
         private string nameForValidity;
         private int numberOfHits;
@@ -11,22 +16,14 @@ namespace ConsoleApp27
         private string pylot;
         private string bomb;
 
-        public F16FighterJet()
+        public Hermes460_Zik_Drone()
         {
-            nameForValidity = "F16FighterJet";
-            numberOfHits = 10;
-            fuel = 100;
-            efficiency = "bilding";
-            pylot = " Operated by a pilot";
-            bomb = " 0.5 ton or 1 ton";
 
         }
-
         public override void Strike()
         {
             Console.WriteLine($"Strike initiated with: {nameForValidity}, Hits: {numberOfHits}, Fuel: {fuel}, Efficiency: {efficiency}");
         }
-
         public override int NumberOfHits()
         {
             return numberOfHits;
