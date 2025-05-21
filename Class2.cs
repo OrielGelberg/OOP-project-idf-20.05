@@ -1,11 +1,13 @@
 ﻿namespace ConsoleApp27
 {
-    abstract class StrikeUni
+     interface StrikeUni
     {
-        public abstract void Strike();
-        public abstract int NumberOfHits();
-        public abstract int Fuel();
-        public abstract string Efficiency();
-        public abstract string NameForValidity();
+          void Strike();
+          int NumberOfHits();
+          int Fuel();
+          string Efficiency();
+          string NameForValidity();
+          string Bomb();
+          
     }
 }

@@ -14,7 +14,7 @@ namespace ConsoleApp27
         public F16FighterJet()
         {
             nameForValidity = "F16FighterJet";
-            numberOfHits = 10;
+            numberOfHits = 8;
             fuel = 100;
             efficiency = "bilding";
             pylot = " Operated by a pilot";
@@ -22,29 +22,33 @@ namespace ConsoleApp27
 
         }
 
-        public override void Strike()
+        public  void Strike()
         {
             Console.WriteLine($"Strike initiated with: {nameForValidity}, Hits: {numberOfHits}, Fuel: {fuel}, Efficiency: {efficiency}");
         }
 
-        public override int NumberOfHits()
+        public  int NumberOfHits()
         {
             return numberOfHits;
         }
 
-        public override int Fuel()
+        public  int Fuel()
         {
             return fuel;
         }
 
-        public override string Efficiency()
+        public  string Efficiency()
         {
             return efficiency;
         }
 
-        public override string NameForValidity()
+        public  string NameForValidity()
         {
             return nameForValidity;
+        }
+        public string Bomb()
+        {
+            return bomb;
         }
     }
 }

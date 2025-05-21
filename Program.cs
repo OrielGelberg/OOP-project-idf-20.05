@@ -9,8 +9,8 @@ namespace OOP_project_idf
     internal class Program
     {
         static void Main(string[] args)
-        {
-
+        { 
+           
         }
     }
 }
