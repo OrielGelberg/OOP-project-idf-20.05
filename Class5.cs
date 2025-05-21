@@ -10,19 +10,20 @@ namespace OOP_project_idf
     {
         private string dateOfEstablishment;
         private string commandInChief;
-        private string AttackOptions;
+        private string attackOptions;
 
-        public InformationAboutTheArmy() {
+        public InformationAboutTheArmy(string dateOfEstablishment ,string commandInChief,string attackOptions)
+        {
 
-            string dateOfEstablishment = "";
-            string commandInChief = "";
-            string AttackOptions = "";
+             this.dateOfEstablishment =dateOfEstablishment ;
+             this.commandInChief =commandInChief;
+             this.attackOptions = attackOptions;
 
 
         }
         public void PrintInformation()
         {
-            Console.WriteLine("");
+            Console.WriteLine($" dateOfEstablishment {dateOfEstablishment}, commandInChief {commandInChief}, attackOptions{attackOptions} ");
         }
     }
 }

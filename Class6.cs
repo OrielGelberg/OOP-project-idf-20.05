@@ -10,27 +10,30 @@ namespace OOP_project_idf
     internal class Ahman
     {
         Dictionary<string, Dictionary<string, string>> terrorists = new Dictionary<string, Dictionary<string, string>>();
+        DateTime time = DateTime.Now;
 
         public Ahman(string nameTerrorists)
         {
+            
+            
             if (!terrorists.ContainsKey(nameTerrorists)){
                 Dictionary<string, string> TerroristDetails = new Dictionary<string, string>();
 
-                Console.Write("הכנס שם: ");
-                string name = Console.ReadLine();
+                
 
-                Console.Write(" ");
+                Console.Write("location");
                 string age = Console.ReadLine();
 
-                Console.Write("הכנס תאריך לידה (לדוגמה 01/01/2000): ");
+                
+                
+                TerroristDetails["location"] = age;
+                TerroristDetails["zman"] = time.ToString("HH:mm dd/MM/yyyy");
 
-                string birthDate = Console.ReadLine();
-                TerroristDetails["שם"] = name;
-                TerroristDetails["גיל"] = age;
-                TerroristDetails["תאריך לידה"] = birthDate;
+                terrorists[nameTerrorists] = TerroristDetails;
 
+                Console.WriteLine("Added successfully");
             }
 
-         }
+        }
     }
 }
