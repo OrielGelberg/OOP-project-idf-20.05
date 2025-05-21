@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\\u05D0\u05D5\u05E8\u05D9\u05D0\u05DC \u05D5\u05D1\u05D8\u05D9\\Desktop\\OOP project idf\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D0808562-DFA8-4F7A-A0E0-C71B4AC4EA92}|OOP project idf.csproj|c:\\users\\\u05D0\u05D5\u05E8\u05D9\u05D0\u05DC \u05D5\u05D1\u05D8\u05D9\\desktop\\oop project idf\\hamas .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0808562-DFA8-4F7A-A0E0-C71B4AC4EA92}|OOP project idf.csproj|solutionrelative:hamas .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D0808562-DFA8-4F7A-A0E0-C71B4AC4EA92}|OOP project idf.csproj|c:\\users\\\u05D0\u05D5\u05E8\u05D9\u05D0\u05DC \u05D5\u05D1\u05D8\u05D9\\desktop\\oop project idf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0808562-DFA8-4F7A-A0E0-C71B4AC4EA92}|OOP project idf.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -13,7 +17,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 235,
+          "DockedHeight": 286,
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -30,13 +34,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05E8\u05D9\u05D0\u05DC \u05D5\u05D1\u05D8\u05D9\\Desktop\\OOP project idf\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\\u05D0\u05D5\u05E8\u05D9\u05D0\u05DC \u05D5\u05D1\u05D8\u05D9\\Desktop\\OOP project idf\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAswA8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T14:03:27.874Z",
               "EditorCaption": ""
@@ -44,9 +48,22 @@
           ]
         },
         {
-          "DockedHeight": 165,
-          "SelectedChildIndex": -1,
+          "DockedHeight": 114,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Hamas .cs",
+              "DocumentMoniker": "C:\\Users\\\u05D0\u05D5\u05E8\u05D9\u05D0\u05DC \u05D5\u05D1\u05D8\u05D9\\Desktop\\OOP project idf\\Hamas .cs",
+              "RelativeDocumentMoniker": "Hamas .cs",
+              "ToolTip": "C:\\Users\\\u05D0\u05D5\u05E8\u05D9\u05D0\u05DC \u05D5\u05D1\u05D8\u05D9\\Desktop\\OOP project idf\\Hamas .cs",
+              "RelativeToolTip": "Hamas .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T06:43:19.644Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
