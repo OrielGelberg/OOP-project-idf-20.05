@@ -8,5 +8,10 @@ namespace OOP_project_idf
 {
     internal class Terrorist
     {
+        private string Name;
+        private int Rank;
+        private bool live;
+
+
     }
 }

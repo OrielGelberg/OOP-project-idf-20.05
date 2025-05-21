@@ -46,6 +46,9 @@
     <Compile Include="Hamas .cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Terrorist organization.cs" />
+    <Compile Include="Terrorist.cs" />
+    <Compile Include="Terroristweapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
