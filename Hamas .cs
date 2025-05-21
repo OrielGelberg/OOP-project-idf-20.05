@@ -12,11 +12,54 @@ namespace OOP_project_idf
         private string _DateEstablished;
         private string _Commander;
         private List<Terrorist> terrorist;
-        public Hamas(string name, string date, string commander)
+        Random _random = new Random();
+        private int numberOfTerrorists;
+
+        public Hamas( string date, string commander)
         {
-            _Name = name;
+            _Name = "hamas";
             _DateEstablished = date;
             _Commander = commander;
+            numberOfTerrorists = _random.Next(5, 10);
+           
+            for (int i = 0; i < numberOfTerrorists; i++)
+            {
+                Terrorist t = new Terrorist(i.ToString());
+                terrorist.Add(t);
+            }
+        }
+        public Terrorist getTerrorists(string id)
+        {
+
+            int i = 0;
+            while (true)
+            {
+                
+                if (i < numberOfTerrorists)
+                {
+                    if (terrorist[i].get_Id() == id)
+                        return terrorist[i];
+                    i++;
+
+                }
+                else
+                    break;
+            }
+            Console.WriteLine("Dont found this id");
+            return null;
+        }
+            
+        
+
+        public List<string> getLid()
+        {
+            List<string> lID = new List<string>();
+            for (int i = 0;i < terrorist.Count; i++)
+            {
+                lID.Add(terrorist[i].get_Id());
+
+            }
+          return lID;
         }
         public string getCommander()
         {
@@ -34,11 +77,13 @@ namespace OOP_project_idf
         {
             return _DateEstablished;
         }
-        public List<Terrorist> getTerrorist()
+       // public List<Terrorist> getTerrorist()
 
-        {
-            return terrorist;
-        }
+        //{
+          //  return terrorist;
+        //}
+
+    
 
 
         public void AddMember(Terrorist newterrorist)
@@ -47,7 +92,7 @@ namespace OOP_project_idf
         }
         public void RemoveMember(string name)
         {
-            
+
         }
 
     }
