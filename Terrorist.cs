@@ -16,6 +16,8 @@ namespace OOP_project_idf
         private string _Id;
         private string[] names;
         Random _random = new Random();
+        
+        private Terroristweapon _weapon;
         public Terrorist(string id )
         { 
 
@@ -25,6 +27,7 @@ namespace OOP_project_idf
             
             names = new string[]{"Ahmed", "Omar", "Ali", "Hassan", "Khaled", "Youssef", "Tariq", "Samir", "Mahmoud", "Nabil"};
             _Name = names[_random.Next(names.Length)];
+            _weapon = new Terroristweapon();
         }
         public string get_Name() { return _Name; }
 
@@ -33,5 +36,12 @@ namespace OOP_project_idf
         public bool is_live() { return _live; }
 
         public string get_Id() { return _Id; }
+
+        public int QualityGoal()
+        {
+            int Quality = _weapon.GetScoreAllWeaponName();
+
+            return _Rank * Quality;
+        }
     }
 }

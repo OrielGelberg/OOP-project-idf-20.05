@@ -15,11 +15,11 @@ namespace OOP_project_idf
         Random _random = new Random();
         private int numberOfTerrorists;
 
-        public Hamas( string date, string commander)
+        public Hamas()
         {
             _Name = "hamas";
-            _DateEstablished = date;
-            _Commander = commander;
+            _DateEstablished = "10.12.1984";
+            _Commander = "Sinwar";
             numberOfTerrorists = _random.Next(5, 10);
            
             for (int i = 0; i < numberOfTerrorists; i++)
@@ -77,21 +77,32 @@ namespace OOP_project_idf
         {
             return _DateEstablished;
         }
-       // public List<Terrorist> getTerrorist()
+        public List<Terrorist> getTerrorist()
 
-        //{
-          //  return terrorist;
-        //}
+        {
+           return terrorist;
+        }
 
     
 
 
-        public void AddMember(Terrorist newterrorist)
+        
+        public void KillTerrorist(string nId)
         {
-            terrorist.Add(newterrorist);
-        }
-        public void RemoveMember(string name)
-        {
+            Terrorist terroristToRemove = null;
+
+            foreach (Terrorist t in terrorist)
+            {
+                if (t.get_Id() == nId) 
+                {
+                    terroristToRemove = t;
+                    break; 
+                }
+            }
+            if (terroristToRemove != null)
+            {
+                terrorist.Remove(terroristToRemove);
+            }
 
         }
 
