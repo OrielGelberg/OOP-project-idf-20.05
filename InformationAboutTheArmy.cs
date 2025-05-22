@@ -12,10 +12,10 @@ namespace OOP_project_idf
         private string commandInChief;
         private string attackOptions;
 
-        public InformationAboutTheArmy(string dateOfEstablishment ,string commandInChief,string attackOptions)
+        public InformationAboutTheArmy(string commandInChief,string attackOptions)
         {
 
-             this.dateOfEstablishment =dateOfEstablishment ;
+             this.dateOfEstablishment = "26 05 1948";
              this.commandInChief =commandInChief;
              this.attackOptions = attackOptions;
 
@@ -23,7 +23,7 @@ namespace OOP_project_idf
         }
         public void PrintInformation()
         {
-            Console.WriteLine($" dateOfEstablishment {dateOfEstablishment}, commandInChief {commandInChief}, attackOptions{attackOptions} ");
+            Console.WriteLine($" dateOfEstablishment {this.dateOfEstablishment}, commandInChief {this.commandInChief}, attackOptions{this.attackOptions} ");
         }
     }
 }

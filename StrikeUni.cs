@@ -8,6 +8,8 @@
           string Efficiency();
           string NameForValidity();
           string Bomb();
-          
+          int setNumberOfHits(int numberOfHits);
+        
+
     }
 }

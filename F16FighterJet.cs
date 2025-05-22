@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ConsoleApp27;
 
-namespace OOP_project_idf
+namespace ConsoleApp27
 {
-    internal class M109Artillery : StrikeUni
+    internal class F16FighterJet : StrikeUni
     {
         private string nameForValidity;
         private int numberOfHits;
@@ -16,40 +11,47 @@ namespace OOP_project_idf
         private string pylot;
         private string bomb;
 
-        public M109Artillery()
+        public F16FighterJet()
         {
-            nameForValidity = "M109 Artillery";
-            numberOfHits = 40;
+            nameForValidity = "F16FighterJet";
+            numberOfHits = 8;
             fuel = 100;
-            efficiency = "open spaces";
-            bomb = "Explosive shells";
+            efficiency = "bilding";
+            pylot = " Operated by a pilot";
+            bomb = " 0.5 ton or 1 ton";
 
         }
-        public void Strike()
+
+        public  void Strike()
         {
             Console.WriteLine($"Strike initiated with: {nameForValidity}, Hits: {numberOfHits}, Fuel: {fuel}, Efficiency: {efficiency}");
         }
 
-        public int NumberOfHits()
+        public  int NumberOfHits()
         {
             return numberOfHits;
         }
+        public int setNumberOfHits(int numberOfHits)
+        {
+            this.numberOfHits = numberOfHits;
+            return this.numberOfHits;
+        }
 
-        public int Fuel()
+        public  int Fuel()
         {
             return fuel;
         }
 
-        public string Efficiency()
+        public  string Efficiency()
         {
             return efficiency;
         }
 
-        public string NameForValidity()
+        public  string NameForValidity()
         {
             return nameForValidity;
         }
-        public string Bomb() 
+        public string Bomb()
         {
             return bomb;
         }

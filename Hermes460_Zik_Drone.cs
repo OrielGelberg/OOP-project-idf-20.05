@@ -32,6 +32,11 @@ namespace OOP_project_idf
         {
             return numberOfHits;
         }
+        public int setNumberOfHits(int numberOfHits)
+        {
+            this.numberOfHits = numberOfHits;
+            return this.numberOfHits;
+        }
 
         public  int Fuel()
         {
