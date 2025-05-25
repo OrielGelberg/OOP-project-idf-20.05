@@ -43,12 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Hamas .cs" />
+    <Compile Include="ahman_class.cs" />
+    <Compile Include="army_info.cs" />
+    <Compile Include="attack_manager.cs" />
+    <Compile Include="f16_fighter.cs" />
+    <Compile Include="hamas_class.cs" />
+    <Compile Include="hermes_drone.cs" />
+    <Compile Include="m109_artillery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Terrorist organization.cs" />
-    <Compile Include="Terrorist.cs" />
-    <Compile Include="Terroristweapon.cs" />
+    <Compile Include="strike_interface.cs" />
+    <Compile Include="terrorist_class.cs" />
+    <Compile Include="terrorist_org_interface.cs" />
+    <Compile Include="terrorist_weapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
