@@ -1,10 +1,5 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Runtime.InteropServices.ComTypes;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP_project_idf
 {
@@ -15,32 +10,32 @@ namespace OOP_project_idf
         private bool _live;
         private string _Id;
         private string[] names;
-        Random _random = new Random();
-        
-        private Terroristweapon _weapon;
-        public Terrorist(string id )
-        { 
+       // Random _random = new Random();
+        private Terroristweapon _weapon = new Terroristweapon();
 
+        public Terrorist(string id, Random random)
+        {
             _Id = id;
-            _Rank = _random.Next(1,6);
+            _Rank = random.Next(1, 6);
             _live = true;
-            
-            names = new string[]{"Ahmed", "Omar", "Ali", "Hassan", "Khaled", "Youssef", "Tariq", "Samir", "Mahmoud", "Nabil"};
-            _Name = names[_random.Next(names.Length)];
+            names = new string[] { "Ahmed", "Omar", "Ali", "Hassan", "Khaled", "Youssef", "Tariq", "Samir", "Mahmoud", "Nabil" };
+            _Name = names[random.Next(names.Length)];
             _weapon = new Terroristweapon();
         }
+
         public string get_Name() { return _Name; }
-
         public int get_Rank() { return _Rank; }
-
         public bool is_live() { return _live; }
-
         public string get_Id() { return _Id; }
+
+        public List<string> GetWeapons()
+        {
+            return _weapon.GetAllWeapons();
+        }
 
         public int QualityGoal()
         {
             int Quality = _weapon.GetScoreAllWeaponName();
-
             return _Rank * Quality;
         }
     }

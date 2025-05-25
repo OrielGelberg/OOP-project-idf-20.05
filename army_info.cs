@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
 namespace OOP_project_idf
 {
@@ -12,15 +8,13 @@ namespace OOP_project_idf
         private string commandInChief;
         private string attackOptions;
 
-        public InformationAboutTheArmy(string commandInChief,string attackOptions)
+        public InformationAboutTheArmy(string commandInChief, string attackOptions)
         {
-
-             this.dateOfEstablishment = "26 05 1948";
-             this.commandInChief =commandInChief;
-             this.attackOptions = attackOptions;
-
-
+            this.dateOfEstablishment = "26 05 1948";
+            this.commandInChief = commandInChief;
+            this.attackOptions = attackOptions;
         }
+
         public void PrintInformation()
         {
             Console.WriteLine($" dateOfEstablishment {this.dateOfEstablishment}, commandInChief {this.commandInChief}, attackOptions{this.attackOptions} ");

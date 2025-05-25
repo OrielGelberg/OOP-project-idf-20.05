@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace ConsoleApp27
+namespace OOP_project_idf
 {
     internal class F16FighterJet : StrikeUni
     {
@@ -16,41 +16,48 @@ namespace ConsoleApp27
             nameForValidity = "F16FighterJet";
             numberOfHits = 8;
             fuel = 100;
-            efficiency = "bilding";
+            efficiency = "building";
             pylot = " Operated by a pilot";
             bomb = " 0.5 ton or 1 ton";
-
         }
 
-        public  void Strike()
+        public void Strike()
         {
-            Console.WriteLine($"Strike initiated with: {nameForValidity}, Hits: {numberOfHits}, Fuel: {fuel}, Efficiency: {efficiency}");
+            Console.WriteLine($" {nameForValidity} Strike initiated!");
+            Console.WriteLine($"   Hits: {numberOfHits}, Fuel: {fuel}%, Target: {efficiency}");
+            Console.WriteLine($"   Bomb: {bomb}");
+            
+            // Reduce hits and fuel after strike
+            if (numberOfHits > 0) numberOfHits--;
+            if (fuel > 10) fuel -= 10;
         }
 
-        public  int NumberOfHits()
+        public int NumberOfHits()
         {
             return numberOfHits;
         }
+
         public int setNumberOfHits(int numberOfHits)
         {
             this.numberOfHits = numberOfHits;
             return this.numberOfHits;
         }
 
-        public  int Fuel()
+        public int Fuel()
         {
             return fuel;
         }
 
-        public  string Efficiency()
+        public string Efficiency()
         {
             return efficiency;
         }
 
-        public  string NameForValidity()
+        public string NameForValidity()
         {
             return nameForValidity;
         }
+
         public string Bomb()
         {
             return bomb;

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ConsoleApp27;
+using System;
 
 namespace OOP_project_idf
 {
@@ -23,12 +18,19 @@ namespace OOP_project_idf
             fuel = 100;
             efficiency = "open spaces";
             bomb = "Explosive shells";
-
         }
+
         public void Strike()
         {
-            Console.WriteLine($"Strike initiated with: {nameForValidity}, Hits: {numberOfHits}, Fuel: {fuel}, Efficiency: {efficiency}  pylot: {pylot} bomb:{bomb} ");
+            Console.WriteLine($" {nameForValidity} Strike initiated!");
+            Console.WriteLine($"   Hits: {numberOfHits}, Fuel: {fuel}%, Target: {efficiency}");
+            Console.WriteLine($"   Bomb: {bomb}");
+            
+            // Reduce hits and fuel after strike
+            if (numberOfHits > 0) numberOfHits--;
+            if (fuel > 5) fuel -= 5;
         }
+
         public int setNumberOfHits(int numberOfHits)
         {
             this.numberOfHits = numberOfHits;
@@ -54,7 +56,8 @@ namespace OOP_project_idf
         {
             return nameForValidity;
         }
-        public string Bomb() 
+
+        public string Bomb()
         {
             return bomb;
         }
